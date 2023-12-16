@@ -10,7 +10,7 @@ jobs:
       - name: Fetch Assets
         uses: cb80/dlassets@latest
         with:
-          tag: ${{ github.event.release.name }}
+          tag: ${{ github.event.release.tag_name }}
           to: dist
       - name: Check Dist Dir
         run: |
