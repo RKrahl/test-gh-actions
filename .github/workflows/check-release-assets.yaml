@@ -6,6 +6,8 @@ on:
 jobs:
   Assets:
     runs-on: ubuntu-latest
+    env:
+      SDIST: test_gha-${{ github.event.release.tag_name }}.tar.gz
     steps:
       - name: Fetch Assets
         uses: cb80/dlassets@latest
@@ -17,5 +19,4 @@ jobs:
           ls -la dist
       - name: Check _meta
         run: |
-          tar --extract --file dist/test_gha-*.tar.gz --gzip --to-stdout --wildcards 'test_gha-*/_meta.py'
-
+          tar --extract --file dist/$SDIST --gzip --to-stdout ${SDIST%%.tar.gz}/_meta.py
