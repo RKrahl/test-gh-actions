@@ -9,7 +9,7 @@ jobs:
   Assets:
     runs-on: ubuntu-latest
     env:
-      DIST_FILE: ${{ env.DIST_NAME }}-${{ github.event.release.tag_name }}.tar.gz
+      DIST_FILE: ${{ vars.DIST_NAME }}-${{ github.event.release.tag_name }}.tar.gz
     steps:
       - name: Fetch Assets
         uses: cb80/dlassets@latest
