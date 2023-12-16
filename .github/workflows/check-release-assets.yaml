@@ -1,0 +1,21 @@
+name: Check Release Assets
+on:
+  release:
+    types:
+       - published
+jobs:
+  Assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Assets
+        uses: cb80/dlassets@latest
+        with:
+          tag: ${{ github.event.release.name }}
+          to: dist
+      - name: Check Dist Dir
+        run: |
+          ls -la dist
+      - name: Check _meta
+        run: |
+          tar --extract --file dist/test_gha-*.tar.gz --gzip --to-stdout --wildcards 'test_gha-*/_meta.py'
+
