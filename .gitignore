@@ -1,0 +1,7 @@
+__pycache__/
+/.env
+/MANIFEST
+/_meta.py
+/build/
+/dist/
+/test_gha/__init__.py
