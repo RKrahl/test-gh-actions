@@ -102,7 +102,7 @@ with Path("README.rst").open("rt", encoding="utf8") as f:
     readme = f.read()
 
 setup(
-    name = "test_gha",
+    name = "test-gh-actions",
     version = version,
     description = docstring.split("\n")[0],
     long_description = readme,
