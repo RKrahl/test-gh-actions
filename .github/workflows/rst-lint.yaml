@@ -18,7 +18,7 @@ jobs:
           python-version: 3.11
       - name: Install dependencies
         run: |
-          pip install setuptools setuptools_scm
+          pip install setuptools git-props
       - name: Run conf.py
         run: |
           python setup.py build
