@@ -1,8 +1,8 @@
 Changelog
 =========
 
-dev (not yet released)
-~~~~~~~~~~~~~~~~~~~~~~
+0.8 (2024-03-09)
+~~~~~~~~~~~~~~~~
 
 + `#3`_: Review build tool chain
 + `#2`_: Add an action to check ReST input files in the documentation
