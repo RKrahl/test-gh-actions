@@ -10,19 +10,18 @@ test:
 sdist:
 	$(PYTHON) setup.py sdist
 
-doc-html: meta
+doc-html: build
 	$(MAKE) -C doc html PYTHONPATH=$(CURDIR)
 
-doc-pdf: meta
+doc-pdf: build
 	$(MAKE) -C doc latexpdf PYTHONPATH=$(CURDIR)
 
 clean:
 	rm -rf build
-	rm -rf __pycache__ test_gha/__pycache__
+	rm -rf __pycache__
 
 distclean: clean
 	rm -f MANIFEST _meta.py
-	rm -f test_gha/__init__.py
 	rm -rf dist
 	rm -rf tests/.pytest_cache
 	$(MAKE) -C doc distclean

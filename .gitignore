@@ -4,4 +4,3 @@ __pycache__/
 /_meta.py
 /build/
 /dist/
-/test_gha/__init__.py
