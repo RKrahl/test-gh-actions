@@ -24,6 +24,6 @@ jobs:
           python setup.py build
           python doc/src/conf.py
       - name: doc8-check
-        uses: deep-entertainment/doc8-action@v4
+        uses: rkrahl/doc8-action
         with:
           scanPaths: "doc/src"
