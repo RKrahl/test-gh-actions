@@ -5,9 +5,11 @@ dev (not yet released)
 ~~~~~~~~~~~~~~~~~~~~~~
 
 + `#3`_: Review build tool chain
++ `#2`_: Add an action to check ReST input files in the documentation
 + `#1`_: Restrict running tests on push to master branch
 
 .. _#1: https://github.com/RKrahl/test-gh-actions/pull/1
+.. _#2: https://github.com/RKrahl/test-gh-actions/pull/2
 .. _#3: https://github.com/RKrahl/test-gh-actions/pull/3
   
 0.7 (2023-12-17)
