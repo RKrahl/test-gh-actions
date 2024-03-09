@@ -6,8 +6,15 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
-import _meta
+from pathlib import Path
+import sys
 
+maindir = Path(__file__).resolve().parent.parent.parent
+buildlib = maindir / "build" / "lib"
+sys.path[0] = str(buildlib)
+sys.dont_write_bytecode = True
+
+import test_gha._meta
 
 # -- Project information -----------------------------------------------------
 
@@ -16,7 +23,7 @@ copyright = '2023, Rolf Krahl'
 author = 'Rolf Krahl'
 
 # The full version, including alpha/beta/rc tags
-release = _meta.version
+release = test_gha._meta.version
 # The short X.Y version
 version = ".".join(release.split(".")[0:2])
 
@@ -49,7 +56,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
