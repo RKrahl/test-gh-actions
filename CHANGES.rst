@@ -1,6 +1,27 @@
 Changelog
 =========
 
+0.9.3 (2025-08-09)
+~~~~~~~~~~~~~~~~~~
+
++ Does the publish release to TestPyPI workflow work again in the
+  meanwhile?
+
+0.9.2 (2025-07-06)
+~~~~~~~~~~~~~~~~~~
+
++ Still struggeling with publish release to TestPyPI workflow.
+
+0.9.1 (2025-07-06)
+~~~~~~~~~~~~~~~~~~
+
++ Struggeling with publish release to TestPyPI workflow.
+
+0.9 (2025-07-06)
+~~~~~~~~~~~~~~~~
+
++ Some updates in the GitHub actions.
+
 0.8 (2024-03-09)
 ~~~~~~~~~~~~~~~~
 
