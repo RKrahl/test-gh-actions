@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.9.4 (2025-08-09)
+~~~~~~~~~~~~~~~~~~
+
++ Looks better indeed!  Try once again without disabling `verify-metadata`.
+
 0.9.3 (2025-08-09)
 ~~~~~~~~~~~~~~~~~~
 
