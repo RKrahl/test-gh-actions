@@ -25,9 +25,8 @@ jobs:
         run: |
           mkdir -p dist
           cp -p assets/$SDIST dist
-      - name: Publish package to PyPI
+      - name: Publish package to TestPyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           repository-url: https://test.pypi.org/legacy/
           verbose: true
-          verify_metadata: false
