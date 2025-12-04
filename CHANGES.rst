@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.9.6 (2025-12-04)
+~~~~~~~~~~~~~~~~~~
+
++ Convert source distribution file name to PEP 625 on upload to TestPyPI.
+
 0.9.5 (2025-12-03)
 ~~~~~~~~~~~~~~~~~~
 
