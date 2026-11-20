@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.9.7 (2026-11-20)
+~~~~~~~~~~~~~~~~~~
+
++ Just a test: does everything still work as expected?
+
 0.9.6 (2025-12-04)
 ~~~~~~~~~~~~~~~~~~
 
